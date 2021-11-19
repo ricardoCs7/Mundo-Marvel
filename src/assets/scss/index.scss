@@ -1,5 +1,5 @@
-h2 {
-    color: blue;
+#app{
+    margin: 0;
 }
 .comic-grid {
     padding: 1rem;
@@ -8,7 +8,12 @@ h2 {
     grid-auto-rows: 500px;
     margin-top: 50px;
 }
-
+#nav{
+    img{
+        width: 200px;
+        height: 70px;
+    }
+}
 article {
     &:hover {
         -webkit-transform: scale(1.15);
