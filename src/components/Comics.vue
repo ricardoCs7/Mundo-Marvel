@@ -2,9 +2,9 @@
     <div class="comic-grid" v-for ="comic in comics">
         <h2>{{comic.title}}</h2>
         <article v-if="comic.images.length >= 1">
-            <img :src = "comic.thumbnail.path+'.jpg'" :alt="comic.title" height="600" width="600"> <br> <br>
+            <img :src = "comic.thumbnail.path+'.jpg'" :alt="comic.title" height="250" width="250"> <br> <br>
         </article>
-        <article v-else><img src = "../assets/not-found.jpg" :alt="comic.title" height="600" width="600" ><br> <br></article> 
+        <article v-else><img src = "../assets/not-found.jpg" :alt="comic.title" height="250" width="250" ><br> <br></article> 
         <span>Price: {{comic.prices[0].price}}</span>
     </div> 
     <button @click="getComics(limit+20)">Ver mas</button>
