@@ -1,5 +1,5 @@
 <template lang="">
-    <div v-for ="comic in comics">
+    <div class="comic-grid" v-for ="comic in comics">
         <h2>{{comic.title}}</h2>
         <article v-if="comic.images.length >= 1">
             <img :src = "comic.thumbnail.path+'.jpg'" :alt="comic.title" height="600" width="600"> <br> <br>
