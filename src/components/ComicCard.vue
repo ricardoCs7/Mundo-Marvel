@@ -2,7 +2,9 @@
   <section>
     <div>
       <article>
-        <h2>{{ comic.title }}</h2>
+       <header>
+            <h3>{{ comic.title }}</h3>
+       </header>
         <img
           :src="comic.thumbnail.path + '.jpg'"
           :alt="comic.title"

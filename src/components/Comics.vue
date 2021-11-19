@@ -1,8 +1,8 @@
 <template >
   <section class="comic-grid">
     <ComicCard v-for="comic in comics" :comic="comic" />
-    <button @click="getComics(limit + 20)">Ver mas</button>
   </section>
+    <button  @click="getComics(limit+20)" type="button" class="btn btn-primary">Ver más</button>
 </template>
 <script>
 import marvelApi from "@/services/marvelApi.js";
