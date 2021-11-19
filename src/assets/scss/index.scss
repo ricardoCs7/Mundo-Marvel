@@ -14,10 +14,11 @@ article {
         -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
         transform: scale(1.15);
+        border-color: red;
     }
     margin-left: auto;
     margin-right: auto;
-    border-color: darkslategrey;
+    border-color: black;
     border-width: 2px;
     border-style: solid;
     border-radius: 15px;
