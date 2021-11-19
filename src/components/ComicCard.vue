@@ -5,13 +5,12 @@
        <header>
             <h3>{{ comic.title }}</h3>
        </header>
-        <img
+        <img id="comicMain"
           :src="comic.thumbnail.path + '.jpg'"
           :alt="comic.title"
-          height="250"
-          width="250"
+         
         />
-        <span>Price: {{ comic.prices[0].price }}</span>
+        <div>Price: {{ comic.prices[0].price }}</div>
       </article>
     </div>
   </section>

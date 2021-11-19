@@ -1,5 +1,5 @@
-h2{
-color: blue;
+h2 {
+    color: blue;
 }
 .comic-grid {
     padding: 1rem;
@@ -7,4 +7,25 @@ color: blue;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-auto-rows: 500px;
     margin-top: 50px;
+}
+
+article {
+    &:hover {
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    margin-left: auto;
+    margin-right: auto;
+    border-color: darkslategrey;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 5px;
+    #comicMain {
+        height: 300px;
+        width: 250px;
+    }
 }
