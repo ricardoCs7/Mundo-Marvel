@@ -1,5 +1,3 @@
-
-
 // class Comic {
 //     constructor(comic = {}) {
 //         this.id = comic.id;
