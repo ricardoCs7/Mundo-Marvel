@@ -1,6 +1,6 @@
 <template>
-  <router-view>
-    <router-link :to="{ name: 'ComicInfo', params: { id: 23 } }">
+  <!-- <router-view>
+    <router-link :to="{ name: 'ComicInfo', params: { id: comic.id } }"> -->
       <article>
         <header>
           <div id="flotante">
@@ -12,10 +12,10 @@
           :src="comic.thumbnail.path + '.jpg'"
           :alt="comic.title"
         />
-        <div>Price: {{ comic.prices[0].price }}</div>
+        <div id="precio">Price: $  {{ comic.prices[0].price }}</div>
       </article>
-    </router-link>
-  </router-view>
+    <!-- </router-link>
+  </router-view> -->
 </template>
 <script>
 export default {

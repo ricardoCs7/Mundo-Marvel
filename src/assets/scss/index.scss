@@ -26,6 +26,17 @@ article {
         font-weight: bold;
     }
     &:hover {
+        #precio {
+            transform: none;
+            position: absolute;
+            bottom:  25px;
+            left: 0;
+            right: 0;
+            font-weight: bold;
+            color: green;
+            font-size: 1.1rem;
+          
+        }
         border-width: 3px;
         #comicMain {
             height: 252px;
