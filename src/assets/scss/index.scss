@@ -1,4 +1,4 @@
-#app{
+#app {
     margin: 0;
 }
 .comic-grid {
@@ -8,19 +8,42 @@
     grid-auto-rows: 500px;
     margin-top: 50px;
 }
-#nav{
-    img{
+#nav {
+    img {
         width: 200px;
         height: 70px;
     }
 }
+
+#flotante {
+    display: none;
+}
+
 article {
+    padding-top: 25px;
+    h2 {
+        font-family: Marvel;
+        font-weight: bold;
+    }
     &:hover {
+        border-width: 3px;
+        #comicMain {
+            height: 252px;
+            width: 168px;
+        }
         -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
         transform: scale(1.15);
         border-color: red;
+        box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 1);
+        #flotante {
+            padding-top: 10px;
+            height: 20%;
+            transition: transform 0.3s;
+            display: block;
+        }
     }
+
     margin-left: auto;
     margin-right: auto;
     border-color: black;
@@ -30,8 +53,10 @@ article {
     width: 320px;
     height: 450px;
     margin-bottom: 5px;
+
     #comicMain {
-        height: 324px;
-        width: 216px;
+        border-radius: 6px;
+        height: 364px;
+        width: 266px;
     }
 }

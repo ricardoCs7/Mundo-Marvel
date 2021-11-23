@@ -1,6 +1,6 @@
 <template>
     <div>
-    <h1>aa</h1>
+    <h1>Landin Page</h1>
     </div>
 </template>
 <script>
