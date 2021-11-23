@@ -1,5 +1,6 @@
 <template>
   <section>
+    <h1><b>Listado de Cómics</b></h1>
     <Comics />
   </section>
 </template>
