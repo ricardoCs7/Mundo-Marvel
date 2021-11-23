@@ -2,7 +2,7 @@
   <article>
     <header>
     <div id="flotante">
-        <h2>{{ comic.title }}</h2>
+        <h3>{{ comic.title }}</h3>
     </div>
     </header>
     <img
