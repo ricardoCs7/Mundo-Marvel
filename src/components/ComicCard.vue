@@ -1,14 +1,16 @@
 <template>
   <article>
     <header>
-      <h3>{{ comic.title }}</h3>
+    <div id="flotante">
+        <h2>{{ comic.title }}</h2>
+    </div>
     </header>
     <img
       id="comicMain"
       :src="comic.thumbnail.path + '.jpg'"
       :alt="comic.title"
     />
-    <div>Price: {{ comic.prices[0].price }}</div>
+    <div> Price: {{ comic.prices[0].price }}</div>
   </article>
 </template>
 <script>
