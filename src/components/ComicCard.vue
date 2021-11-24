@@ -12,7 +12,7 @@
           :src="comic.thumbnail.path + '.jpg'"
           :alt="comic.title"
         />
-        <div id="precio"> Price: $  {{ comic.prices[0].price }}</div>
+        <div id="precio"> Precio: $ {{ comic.prices[0].price }} USD</div>
       </article>
     <!-- </router-link>
   </router-view> -->

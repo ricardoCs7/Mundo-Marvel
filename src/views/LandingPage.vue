@@ -41,8 +41,8 @@
         </div>
         <div class="col-md">
           <img
-            src="https://logos-world.net/wp-content/uploads/2020/11/Spider-Man-Emblem.png"
-            width="250px"
+            src="https://www.nicepng.com/png/full/3-35805_deadpool-circle.png"
+            width="140px"
             alt=""
           />
           <div id="info">INFO 3</div>
