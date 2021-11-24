@@ -15,7 +15,7 @@
     }
 }
 
-h1{
+h1 {
     font-family: Marvel;
     padding-top: 20px;
     font-weight: bold;
@@ -24,6 +24,29 @@ h1{
 
 #flotante {
     display: none;
+}
+
+#logoLanding {
+    width: 750px;
+}
+#container2 {
+    #info {
+        font-family: Marvel;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    #info2 {
+        font-family: Marvel;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: red;
+    }
+}
+.col-md {
+    border-color: black 1px solid;
+    div {
+        padding-top: 8px;
+    }
 }
 
 article {
@@ -36,13 +59,12 @@ article {
         #precio {
             transform: none;
             position: absolute;
-            bottom:  25px;
+            bottom: 25px;
             left: 0;
             right: 0;
             font-weight: bold;
             color: green;
             font-size: 1.1rem;
-          
         }
         border-width: 3px;
         #comicMain {
@@ -76,5 +98,41 @@ article {
         border-radius: 6px;
         height: 364px;
         width: 266px;
+    }
+}
+#container1 {
+    height: 210px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: rgba(236, 29, 36, 255);
+}
+
+#container2 {
+    background-color: whitesmoke;
+    padding-top: 120px;
+    padding-bottom: 5px;
+    .row {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+#logoLanding {
+    transform: translateY(40px);
+    width: 650px;
+}
+
+#container3 {
+    padding-top: 10px;
+    height: 210px;
+    background-color: rgb(6, 26, 26);
+    .row {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #info{
+        color: red;
+    }
+    #info2{
+        color: white;
     }
 }
