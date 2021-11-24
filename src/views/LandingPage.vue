@@ -16,6 +16,13 @@
             alt=""
           />
           <div id="info">INFO 1</div>
+          <div id="subInfo">
+            INFO
+            <br />
+            INFO
+            <br />
+            INFO
+          </div>
         </div>
         <div class="col-md">
           <img
@@ -24,14 +31,28 @@
             alt=""
           />
           <div id="info2">INFO 2</div>
+           <div id="subInfo2">
+            INFO
+            <br />
+            INFO
+            <br />
+            INFO
+          </div>
         </div>
         <div class="col-md">
           <img
             src="https://logos-world.net/wp-content/uploads/2020/11/Spider-Man-Emblem.png"
-            width="240px"
+            width="250px"
             alt=""
           />
           <div id="info">INFO 3</div>
+           <div id="subInfo">
+            INFO
+            <br />
+            INFO
+            <br />
+            INFO
+          </div>
         </div>
         <div class="col-md">
           <img
@@ -40,6 +61,13 @@
             alt=""
           />
           <div id="info2">INFO 4</div>
+          <div id="subInfo2">
+            INFO
+            <br />
+            INFO
+            <br />
+            INFO
+          </div>
         </div>
       </div>
     </div>
@@ -47,30 +75,30 @@
       <div class="row">
         <div id="info" class="col-md">
           INFO
-          <br>
+          <br />
           INFO
-          <br>
-          INFO
-        </div>
-        <div  id="info2" class="col-md">
-          INFO
-          <br>
-          INFO
-          <br>
-          INFO
-        </div>
-        <div  id="info" class="col-md">
-         INFO
-          <br>
-          INFO
-          <br>
+          <br />
           INFO
         </div>
         <div id="info2" class="col-md">
-           INFO
-          <br>
           INFO
-          <br>
+          <br />
+          INFO
+          <br />
+          INFO
+        </div>
+        <div id="info" class="col-md">
+          INFO
+          <br />
+          INFO
+          <br />
+          INFO
+        </div>
+        <div id="info2" class="col-md">
+          INFO
+          <br />
+          INFO
+          <br />
           INFO
         </div>
       </div>
