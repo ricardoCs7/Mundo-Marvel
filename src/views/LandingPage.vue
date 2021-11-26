@@ -56,7 +56,7 @@
         </div>
         <div class="col-md">
           <img
-            src="https://cdn-icons.flaticon.com/png/512/2234/premium/2234489.png?token=exp=1637713203~hmac=30057bb1c972e316a74163367029edfc"
+            src="https://cdn.pixabay.com/photo/2019/10/15/09/09/captain-american-4551118_960_720.png"
             width="140px"
             alt=""
           />

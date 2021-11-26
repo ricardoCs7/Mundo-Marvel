@@ -22,9 +22,7 @@ h1 {
     color: red;
 }
 
-#flotante {
-    display: none;
-}
+
 
 #logoLanding {
     width: 750px;
@@ -50,8 +48,9 @@ h1 {
 }
 
 article {
-    padding-top: 25px;
+    padding-top: 5px;
     h3 {
+        font-size: 1.1rem;
         font-family: Marvel;
         font-weight: bold;
     }
@@ -81,6 +80,9 @@ article {
             height: 20%;
             transition: transform 0.3s;
             display: block;
+            h3{
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -104,7 +106,8 @@ article {
     height: 210px;
     margin-bottom: 0;
     padding-bottom: 0;
-    background-color: rgba(236, 29, 36, 255);
+    // background-color: rgba(236, 29, 36, 255);
+    background-color: darkslategray;
 }
 
 #container2 {
@@ -145,7 +148,6 @@ article {
     &:hover {
         -webkit-transform: scale(1) rotate(1deg);
         transform: scale(1) rotate(4deg);
-       
     }
 }
 
