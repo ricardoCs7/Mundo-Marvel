@@ -84,6 +84,7 @@ article {
             }
         }
     }
+    padding: 5px;
     margin-left: auto;
     margin-right: auto;
     border-color: black;
@@ -101,6 +102,7 @@ article {
         width: 266px;
     }
 }
+
 #container1 {
     height: 210px;
     margin-bottom: 0;
@@ -144,10 +146,10 @@ article {
     transition-property: transform;
     transform: translateY(30px);
     width: 650px;
-    &:hover {
-        -webkit-transform: scale(1) rotate(1deg);
-        transform: scale(1) rotate(4deg);
-    }
+    // &:hover {
+    //     -webkit-transform: scale(1) rotate(1deg);
+    //     transform: scale(1) rotate(4deg);
+    // }
 }
 
 #container3 {

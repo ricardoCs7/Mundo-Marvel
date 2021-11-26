@@ -46,5 +46,5 @@ export default {
   components: { ComicCard },
 };
 </script>
-<style lang="">
+<style>
 </style>
