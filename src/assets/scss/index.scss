@@ -2,11 +2,13 @@
     margin: 0;
 }
 .comic-grid {
+    
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-auto-rows: 500px;
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 6px;
 }
 #nav {
     img {
@@ -21,8 +23,6 @@ h1 {
     font-weight: bold;
     color: red;
 }
-
-
 
 #logoLanding {
     width: 750px;
@@ -48,7 +48,6 @@ h1 {
 }
 
 article {
-    padding-top: 5px;
     h3 {
         font-size: 1.1rem;
         font-family: Marvel;
@@ -80,12 +79,11 @@ article {
             height: 20%;
             transition: transform 0.3s;
             display: block;
-            h3{
+            h3 {
                 font-size: 1.8rem;
             }
         }
     }
-
     margin-left: auto;
     margin-right: auto;
     border-color: black;
@@ -94,7 +92,8 @@ article {
     border-radius: 15px;
     width: 320px;
     height: 450px;
-    margin-bottom: 5px;
+    margin-bottom: auto;
+    margin-top: auto;
 
     #comicMain {
         border-radius: 6px;
