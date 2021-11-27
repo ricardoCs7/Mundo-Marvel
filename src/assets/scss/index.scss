@@ -2,12 +2,11 @@
     margin: 0;
 }
 .comic-grid {
-    
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-auto-rows: 500px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 6px;
 }
 #nav {
@@ -47,59 +46,67 @@ h1 {
     }
 }
 
-article {
-    h3 {
-        font-size: 1.1rem;
-        font-family: Marvel;
-        font-weight: bold;
-    }
-    &:hover {
-        #precio {
-            transform: none;
-            position: absolute;
-            bottom: 25px;
-            left: 0;
-            right: 0;
-            font-weight: bold;
-            color: green;
+#cardLink {
+    text-decoration: none;
+    article {
+        h3 {
             font-size: 1.1rem;
+            font-family: Marvel;
+            font-weight: bold;
+            color: darkslategrey;
         }
-        border-width: 3px;
-        #comicMain {
-            height: 252px;
-            width: 168px;
+        #precio{
+             color: darkslategrey;
+             margin-top: 4px;
         }
-        -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-        transform: scale(1.15);
-        border-color: red;
-        box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 1);
-        #flotante {
-            padding-top: 10px;
-            height: 20%;
-            transition: transform 0.3s;
-            display: block;
-            h3 {
-                font-size: 1.8rem;
+        &:hover {
+            #precio {
+                transform: none;
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                font-weight: bold;
+                color: green;
+                font-size: 1.1rem;
+            }
+            border-width: 3px;
+            #comicMain {
+                height: 252px;
+                width: 168px;
+            }
+            -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            transform: scale(1.15);
+            border-color: red;
+            box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 1);
+            #flotante {
+                padding-top: 10px;
+                height: 20%;
+                transition: transform 0.3s;
+                display: block;
+                h3 {
+                    font-size: 1.8rem;
+                }
             }
         }
-    }
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 15px;
-    width: 320px;
-    height: 450px;
-    margin-bottom: auto;
-    margin-top: auto;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 15px;
+        width: 320px;
+        height: 450px;
+        margin-bottom: auto;
+        margin-top: auto;
 
-    #comicMain {
-        border-radius: 6px;
-        height: 364px;
-        width: 266px;
+        #comicMain {
+            border-radius: 6px;
+            height: 364px;
+            width: 266px;
+        }
     }
 }
 

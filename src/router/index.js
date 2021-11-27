@@ -31,7 +31,7 @@ const routes = [
 
     {
         path: '/comics/:id',
-        name: ComicInfo,
+        name: 'ComicInfo',
         component: ComicInfo,
     },
 
