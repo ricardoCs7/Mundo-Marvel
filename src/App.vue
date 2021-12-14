@@ -2,23 +2,21 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 
-
-
 export default {
-  components: {
-  
-  },
+  components: {},
 };
 </script>
 
 <template>
   <nav id="nav" class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link to="/" >   <img to="/"
-        src="https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4-1.png"
-        alt="Marvel"
+      <router-link to="/">
+        <img
+          to="/"
+          src="https://logodownload.org/wp-content/uploads/2017/05/marvel-logo-4-1.png"
+          alt="Marvel"
       /></router-link>
-   
+
       <button
         class="navbar-toggler"
         type="button"
@@ -33,16 +31,21 @@ export default {
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <router-link class="nav-link" to="/" >Home</router-link>
+            <router-link class="nav-link" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/ComicList" >Cómics</router-link>
+            <router-link class="nav-link" to="/ComicList">Cómics</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/landingPage" >Landing Page</router-link>
+            <router-link class="nav-link" to="/landingPage"
+              >Landing Page</router-link
+            >
           </li>
         </ul>
-        <span class="navbar-text"> Navbar text with an inline element </span>
+        <span><i style="color: lightgray;" class="bi bi-person-circle"></i></span>
+        <span>
+          <router-link class="nav-link" to="/login">Ingresar</router-link>
+        </span>
       </div>
     </div>
   </nav>

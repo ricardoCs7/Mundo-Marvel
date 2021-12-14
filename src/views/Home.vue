@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1><b>Bienvenido</b></h1>
+    <h1><b>Bienvenido ARREGLAR Y HACER MAS LINDO xd</b></h1>
   </div>
   <div class="home">
     <router-link to="/ComicList">

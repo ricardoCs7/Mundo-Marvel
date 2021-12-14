@@ -35,6 +35,15 @@ const routes = [
         component: ComicInfo,
     },
 
+    {
+        path: '/login',
+        name: 'Login',
+        // división del código a nivel de ruta
+        // esto genera un chunk separado (about.[hash].js) para esta ruta
+        // que se carga de forma perezosa (lazy-loaded) cuando se visita la ruta.
+        component: () => import(/* webpackChunkName: "about" */ '@/views/Login.vue')
+    }
+
 ]
 
 const router = createRouter({

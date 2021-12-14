@@ -2,10 +2,10 @@
   <section v-for="comic in comics" :comic="comic">
     <div class="row">
       <h1>{{ comic.title }}</h1>
-      <div class="col-6">
+      <div class="col-sm-4">
         <img :src="comic.thumbnail.path + '.jpg'" alt="" width="250" />
       </div>
-      <div class="col">
+      <div class="col-md-6">
         <span
           ><b><h3>Description:</h3></b></span
         >{{ comic.description }}
