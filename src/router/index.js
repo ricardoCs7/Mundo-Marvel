@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import ComicInfo from '@/views/ComicInfo.vue';
+import CharacterInfo from '@/views/CharacterInfo.vue';
 
 const routes = [
     {
@@ -20,6 +21,14 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '@/views/ComicList.vue')
     },
     {
+        path: '/CharacList',
+        name: 'CharacterList',
+        // división del código a nivel de ruta
+        // esto genera un chunk separado (about.[hash].js) para esta ruta
+        // que se carga de forma perezosa (lazy-loaded) cuando se visita la ruta.
+        component: () => import(/* webpackChunkName: "about" */ '@/views/CharacterList.vue')
+    },
+    {
 
         path: '/landingPage',
         name: 'Landing Page',
@@ -33,6 +42,11 @@ const routes = [
         path: '/comics/:id',
         name: 'ComicInfo',
         component: ComicInfo,
+    },
+    {
+        path: '/character/:id',
+        name: 'CharacterInfo',
+        component: CharacterInfo,
     },
 
     {

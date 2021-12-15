@@ -30,5 +30,12 @@ class marvelApi {
         //const urlbas = 'https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=3e39aee8077ad9d2bd967a7fa47f4f1b&hash=1449909229a1a077fc7e4286d43b2194'
         return `https://gateway.marvel.com:443/v1/public/comics/${id}?ts=1&apikey=3e39aee8077ad9d2bd967a7fa47f4f1b&hash=1449909229a1a077fc7e4286d43b2194`
     }
+    getCharacters(limit){
+        return `https://gateway.marvel.com:443/v1/public/characters?limit=${limit}&ts=1&apikey=3e39aee8077ad9d2bd967a7fa47f4f1b&hash=1449909229a1a077fc7e4286d43b2194`
+    }
+
+    getCharacter(id){
+        return `https://gateway.marvel.com:443/v1/public/characters/${id}?ts=1&apikey=3e39aee8077ad9d2bd967a7fa47f4f1b&hash=1449909229a1a077fc7e4286d43b2194`
+    }
 };
 export default new marvelApi();

@@ -12,7 +12,8 @@
           :src="comic.thumbnail.path + '.jpg'"
           :alt="comic.title"
         />
-        <div id="precio"> Precio: $ {{ comic.prices[0].price }} USD</div>
+        <div v-if="comic.prices[0].price!=0" id="precio"> Precio: $ {{ comic.prices[0].price }} USD</div>
+        <div v-else id="precio"> No disponible</div>
       </article>
     </router-link>
   </router-view>

@@ -3,7 +3,6 @@
     <h1><b>Bienvenido ARREGLAR Y HACER MAS LINDO xd</b></h1>
   </div>
   <div class="home">
-    <router-link to="/ComicList">
       <div id="home1" class="row">
         <div class="col">
           <img
@@ -13,14 +12,17 @@
           />
         </div>
         <div class="col">
+          <a href="/ComicList">
           <h2>COMICS</h2>
+          </a>
         </div>
       </div>
-    </router-link>
 
     <div id="home2" class="row">
       <div class="col">
+        <a href="/CharacList">
         <h2>PERSONAJES</h2>
+        </a>
       </div>
       <div class="col">
         <div>

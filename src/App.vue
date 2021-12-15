@@ -37,6 +37,9 @@ export default {
             <router-link class="nav-link" to="/ComicList">Cómics</router-link>
           </li>
           <li class="nav-item">
+            <router-link class="nav-link" to="/CharacList">Personajes</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" to="/landingPage"
               >Landing Page</router-link
             >
