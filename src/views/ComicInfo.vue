@@ -1,25 +1,34 @@
 <template>
   <section v-for="comic in comics" :comic="comic">
-    <div class="row">
+    <div id="comicInfo" class="row">
       <h1>{{ comic.title }}</h1>
+      <div>
+        <hr>
+      </div>
       <div class="col-sm-4">
         <img :src="comic.thumbnail.path + '.jpg'" alt="" width="250" />
       </div>
-      <div v-if="comic.description!=''" class="col-md-6">
+      <div v-if="comic.description != ''" class="col-md-6">
         <span
-          ><b><h3>Description:</h3></b></span>
-          {{ comic.description }}
+          ><b><h3>Description:</h3></b></span
+        >
+        {{ comic.description }}
       </div>
       <div v-else class="col-md-6">
-        <span
-          ><b><h3>Description:</h3></b></span>
-          No tiene descripcion
+        <b><h3 style="text-align: left">Description:</h3></b>
+        No se ha encontrado descripción :(
+        <span>
+          <img
+            src="https://www.clipartmax.com/png/full/50-508951_cartoon-art-pictures-sad-deadpool.png"
+            width="250"
+            alt=""
+        /></span>
       </div>
       <div v-for="date in dates" :date="date">
-        <span>Dates: </span> {{comic.date}}
+        <span>Dates: </span> {{ comic.date }}
       </div>
     </div>
-    
+
     <!-- <div v-for="image in images" :image="image">
       <img :src="comic.images" alt="" />
     </div> -->
@@ -33,6 +42,7 @@
 </template>
 <script>
 import marvelApi from "@/services/marvelApi.js";
+
 export default {
   data() {
     return {

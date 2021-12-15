@@ -1,24 +1,34 @@
-<template lang="">
-<!-- {{character}}-->
-{{character.thumbnail}}
-    <div class="row">
-      <h1>{{ character.name }}</h1>
-      <div class="col-sm-4">
-          {{ character.name }}
-          insertar foto
+<template >
+  <!-- {{character}}-->
+
+  <div id="characterInfo" class="row">
+    <h1>{{ character.name }}</h1>
+    <div>
+        <hr>
       </div>
-      <div v-if="character.description!=''" class="col-md-6">
-        <span
-          ><b><h3>Description:</h3></b></span>
-          {{ character.description }}
-      </div>
-      <div v-else class="col-md-6">
-        <span
-          ><b><h3>Description:</h3></b></span>
-          No tiene descripcion
-      </div>
+    <div class="col-sm-4">
+      <img :src="character.thumbnail + '.jpg'" alt="" width="250" />
     </div>
-    <section>
+    <br>
+    <br>
+    <div v-if="character.description != ''" class="col-md-6">
+      <span
+        ><b><h3>Description:</h3></b></span
+      >
+      {{ character.description }}
+    </div>
+    <div v-else class="col-md-6">
+      <b><h3 style="text-align: left;">Description:</h3></b>
+      No se ha encontrado descripción :(
+      <span>
+        <img
+          src="https://www.clipartmax.com/png/full/50-508951_cartoon-art-pictures-sad-deadpool.png"
+          width="250"
+          alt=""
+      /></span>
+    </div>
+  </div>
+  <section>
     <button @click="$router.go(-1)" type="button" class="btn btn-danger">
       <i class="bi bi-arrow-left-circle"></i> Regresar
     </button>
@@ -27,7 +37,7 @@
 <script>
 import marvelApi from "@/services/marvelApi.js";
 export default {
-    data() {
+  data() {
     return {
       character: [],
       id: {},
@@ -41,12 +51,11 @@ export default {
       fetch(marvelApi.getCharacter(id))
         .then((res) => res.json())
         .then((json) => {
-            this.character=json.data.results[0];
+          this.character = json.data.results[0];
         });
     },
   },
-}
+};
 </script>
-<style lang="">
-    
+<style >
 </style>
