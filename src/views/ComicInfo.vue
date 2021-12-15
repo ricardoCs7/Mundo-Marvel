@@ -5,11 +5,15 @@
       <div class="col-sm-4">
         <img :src="comic.thumbnail.path + '.jpg'" alt="" width="250" />
       </div>
-      <div class="col-md-6">
+      <div v-if="comic.description!=''" class="col-md-6">
         <span
-          ><b><h3>Description:</h3></b></span
-        >{{ comic.description }}
-        
+          ><b><h3>Description:</h3></b></span>
+          {{ comic.description }}
+      </div>
+      <div v-else class="col-md-6">
+        <span
+          ><b><h3>Description:</h3></b></span>
+          No tiene descripcion
       </div>
       <div v-for="date in dates" :date="date">
         <span>Dates: </span> {{comic.date}}
