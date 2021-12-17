@@ -220,10 +220,21 @@ h1 {
     }
     .col-sm-4 {
         margin-top: 12px;
+        
     }
-    .col-md-6{
+    .col-md-6 {
         margin-top: 12px;
         margin-bottom: 52px;
+        text-align: justify;
+        p {
+            margin-top: 30px;
+        }
+    }
+    .col {
+        text-align: justify;
+        p {
+            margin-top: 60px;
+        }
     }
 }
 
@@ -238,9 +249,18 @@ h1 {
     .col-sm-4 {
         margin-top: 12px;
     }
-    .col-md-6{
+    .col-md-6 {
         margin-top: 12px;
         margin-bottom: 52px;
+        text-align: justify;
+        p {
+            margin-top: 30px;
+        }
     }
-   
+    .col {
+        text-align: justify;
+        p {
+            margin-top: 60px;
+        }
+    }
 }

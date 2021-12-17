@@ -3,7 +3,7 @@
     <div id="comicInfo" class="row">
       <h1>{{ comic.title }}</h1>
       <div>
-        <hr>
+        <hr />
       </div>
       <div class="col-sm-4">
         <img :src="comic.thumbnail.path + '.jpg'" alt="" width="250" />
@@ -12,17 +12,25 @@
         <span
           ><b><h3>Description:</h3></b></span
         >
-        {{ comic.description }}
+       <p> {{ comic.description }}</p>
       </div>
       <div v-else class="col-md-6">
         <b><h3 style="text-align: left">Description:</h3></b>
-        No se ha encontrado descripción :(
-        <span>
-          <img
-            src="https://www.clipartmax.com/png/full/50-508951_cartoon-art-pictures-sad-deadpool.png"
-            width="250"
-            alt=""
-        /></span>
+        <div class="row">
+          <div class="col">
+            <p>No se ha encontrado descripción :(</p>
+            <br />
+            Pero no te preocupes, solo algunas no la poseen! :D
+          </div>
+          <div class="col">
+            <span>
+              <img
+                src="https://www.clipartmax.com/png/full/50-508951_cartoon-art-pictures-sad-deadpool.png"
+                width="250"
+                alt=""
+            /></span>
+          </div>
+        </div>
       </div>
       <div v-for="date in dates" :date="date">
         <span>Dates: </span> {{ comic.date }}
