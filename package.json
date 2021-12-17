@@ -2,7 +2,7 @@
   "name": "Mundo-Marvel",
   "version": "0.0.0",
   "scripts": {
-    "dev": "nodemon src/app.js",
+    "dev": "nodemon src/app.js --exec babel-node",
     "build": "vite build",
     "serve": "vite preview"
   },
