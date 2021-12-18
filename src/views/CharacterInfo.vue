@@ -4,28 +4,36 @@
   <div id="characterInfo" class="row">
     <h1>{{ character.name }}</h1>
     <div>
-        <hr>
-      </div>
+      <hr />
+    </div>
     <div class="col-sm-4">
       <img :src="character.thumbnail + '.jpg'" alt="" width="250" />
     </div>
-    <br>
-    <br>
+    <br />
+    <br />
     <div v-if="character.description != ''" class="col-md-6">
       <span
         ><b><h3>Description:</h3></b></span
       >
-      {{ character.description }}
+      <p>{{ character.description }}</p>
     </div>
     <div v-else class="col-md-6">
-      <b><h3 style="text-align: left;">Description:</h3></b>
-      No se ha encontrado descripción :(
-      <span>
-        <img
-          src="https://www.clipartmax.com/png/full/50-508951_cartoon-art-pictures-sad-deadpool.png"
-          width="250"
-          alt=""
-      /></span>
+      <b><h3 style="text-align: left">Description:</h3></b>
+      <div class="row">
+        <div class="col">
+          <p>No se ha encontrado descripción :(</p>
+          <br />
+          Pero no te preocupes, solo algunas no la poseen! :D
+        </div>
+        <div class="col">
+          <span>
+            <img
+              src="https://www.clipartmax.com/png/full/50-508951_cartoon-art-pictures-sad-deadpool.png"
+              width="250"
+              alt=""
+          /></span>
+        </div>
+      </div>
     </div>
   </div>
   <section>
